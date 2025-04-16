@@ -1,0 +1,5 @@
+cd C:\Users\profa\solcast_A
+streamlit run solcast_app_full_with_report.py
+
+
+

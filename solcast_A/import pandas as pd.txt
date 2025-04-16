@@ -1,0 +1,11 @@
+import pandas as pd
+
+df = pd.read_csv("data/merged_forecast_input.csv", parse_dates=["timestamp"])
+df.set_index("timestamp", inplace=True)
+
+print("✅ Shape:", df.shape)
+print("\n📊 Summary Statistics:\n")
+print(df.describe())
+
+print("\n🧪 Missing Values:\n")
+print(df.isna().sum())
